@@ -41,12 +41,13 @@
         </div>
         <div class="captcha-container">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <form id="MainForm" runat="server">
                         <div class="input-group">
                             <div class="input-group-addon captcha-group">
                                 <div class="captcha-wrapper">
-                                    <canvas id="myCaptcha" class="form-control captcha-text">Sorry, Your browser does not support the HTML5 canvas tag!
+                                    <button id="RefreshBtn" title="Refresh Captcha" class="btn btn-primary captcha-refresh-btn"><i class="fa fa-refresh fa-lg"></i></button>
+                                    <canvas id="myCaptcha" width="180" height="60" class="form-control captcha-text">Sorry, Your browser does not support the HTML5 canvas tag!
                                     </canvas>
                                 </div>
                             </div>

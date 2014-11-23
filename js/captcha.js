@@ -2,7 +2,7 @@
     // Generate Captcha
     GetCaptcha();
 
-});
+})();
 
 function GetCaptcha() {
     $.ajax({
@@ -20,12 +20,12 @@ function GetCaptcha() {
 function GenCaptcha(captcha) {
     var CImage = document.getElementById("myCaptcha");
     var CText = CImage.getContext("2d");
-    CText.clearRect(0, 0, 150, 60);
-    CText.font = "bold 2.5em 'Rock Salt', cursive";
-    CText.fillStyle = "#2c3e50";
+    CText.clearRect(0, 0, 180, 60);
+    CText.font = "bold 45px 'RockSalt', cursive";
+    CText.fillStyle = "#375a7f";
     CText.shadowColor = '#cccccc';
     CText.shadowBlur = 5;
     CText.shadowOffsetX = 5;
     CText.shadowOffsetY = 5;
-    CText.fillText(captcha, 10, 50)
+    CText.fillText(captcha, 5, 50)
 }

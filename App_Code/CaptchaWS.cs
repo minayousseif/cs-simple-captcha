@@ -15,11 +15,9 @@ using SimpleCaptcha;
 public class CaptchaWS : System.Web.Services.WebService {
 
     public CaptchaWS () {
-
         //Uncomment the following line if using designed components 
         //InitializeComponent(); 
     }
-
     [WebMethod(EnableSession = true)]
     public string GenCaptcha() {
         return captcha.GenCaptcha();
