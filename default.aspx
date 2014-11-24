@@ -46,7 +46,7 @@
                         <div class="input-group">
                             <div class="input-group-addon captcha-group">
                                 <div class="captcha-wrapper">
-                                    <button id="RefreshBtn" title="Refresh Captcha" class="btn btn-primary captcha-refresh-btn"><i class="fa fa-refresh fa-lg"></i></button>
+                                    <button type="button" id="RefreshBtn" title="Refresh Captcha" class="btn btn-primary captcha-refresh-btn"><i class="fa fa-refresh fa-lg"></i></button>
                                     <canvas id="myCaptcha" width="180" height="60" class="form-control captcha-text">Sorry, Your browser does not support the HTML5 canvas tag!
                                     </canvas>
                                 </div>

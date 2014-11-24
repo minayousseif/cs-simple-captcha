@@ -10,6 +10,7 @@ namespace SimpleCaptcha
 {
     public class captcha
     {
+        //Simple Function the genreate captcha text and store it in a session
         public static string GenCaptcha(int _clength = 5)
         {
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

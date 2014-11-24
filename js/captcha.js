@@ -2,7 +2,11 @@
     // Generate Captcha
     GetCaptcha();
 
-})();
+    $('#RefreshBtn').click(function () {
+        GetCaptcha();
+    });
+
+});
 
 function GetCaptcha() {
     $.ajax({
@@ -17,6 +21,7 @@ function GetCaptcha() {
     });
 }
 
+// Genrate Captcha Text 
 function GenCaptcha(captcha) {
     var CImage = document.getElementById("myCaptcha");
     var CText = CImage.getContext("2d");
