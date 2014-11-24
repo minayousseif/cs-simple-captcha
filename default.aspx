@@ -61,6 +61,19 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <div class="add-top"></div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <div class="alert alert-dismissable alert-success captcha-success">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <p><span class="captcha-alert"><i class="fa fa-check fa-lg"></i></span><span class="success-msg"></span></p>
+                    </div>
+                    <div class="alert alert-dismissable alert-danger captcha-failed">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <p><span class="captcha-alert"><i class="fa fa-times fa-lg"></i></span><span class="error-msg"></span></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2 w">

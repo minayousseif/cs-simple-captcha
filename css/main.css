@@ -80,7 +80,11 @@ h1 {
 	padding: 12px;
 }
 
-
+.add-top {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+}
 
 
 /* CAPTCHA CONTAINER */
@@ -146,12 +150,34 @@ background-image: none;
 padding: 4px 8px 6px 0;
 min-width:160px;
 }
+
+
 .captcha-container .captcha-submit-btn {
 border-radius:0 35px 35px 0;
 padding:14px 8px;
 float:right;
 min-width:150px;
 width:100%;
+}
+
+.alert {
+border-radius: 35px;
+}
+.captcha-success, .captcha-failed {
+display:none;
+}
+.captcha-alert{
+    border-radius:100%;
+    margin-left:-10px;
+    padding: 10px;
+    border:2px solid #ffffff;
+    width:60px;
+    text-align:center;
+
+}
+
+.captcha-alert i.fa-times {
+    padding:0 2px;
 }
 
 
