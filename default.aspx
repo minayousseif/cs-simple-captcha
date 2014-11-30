@@ -19,7 +19,7 @@
     <!-- Custom styles for csharp simple captcha -->
     <link href="css/main.css" rel="stylesheet" />
     <!--- Fav Icon---->
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Google fonts -->
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
