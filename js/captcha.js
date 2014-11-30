@@ -15,6 +15,9 @@
         else {
             VerfiyCaptcha(enteredCaptcha);
         }
+        $('.captcha-input').val('');
+        GetCaptcha();
+
     });
 });
 
@@ -48,7 +51,7 @@ function VerfiyCaptcha(captcha) {
             }
             else {
                 $('.captcha-success').slideDown('slow');
-                $('.success-msg').text("Great, it's a match.");
+                $('.success-msg').text("Great, your entered text match.");
                 setTimeout(function () { $('.captcha-success').slideUp('slow'); }, 5000);
             }
         }

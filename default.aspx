@@ -76,7 +76,7 @@
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2 w">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                    <li><a href="https://plus.google.com/u/0/105683178953955736645"><i class="fa fa-google-plus"></i></a>
                     </li>
                     <li><a href="https://github.com/minayousseif"><i class="fa fa-github"></i></a>
                     </li>
