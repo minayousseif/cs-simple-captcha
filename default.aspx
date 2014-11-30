@@ -64,12 +64,10 @@
             <div class="row">
                 <div class="add-top"></div>
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <div class="alert alert-dismissable alert-success captcha-success">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
+                    <div class="alert alert-success captcha-success">
                         <p><span class="captcha-alert"><i class="fa fa-check fa-lg"></i></span><span class="success-msg"></span></p>
                     </div>
-                    <div class="alert alert-dismissable alert-danger captcha-failed">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
+                    <div class="alert alert-danger captcha-failed">
                         <p><span class="captcha-alert"><i class="fa fa-times fa-lg"></i></span><span class="error-msg"></span></p>
                     </div>
                 </div>
@@ -95,8 +93,12 @@
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <!--main.js and captcha.js -->
-    <script src="js/main.js"></script>
+    <!--captcha.js -->
     <script src="js/captcha.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.backstretch("img/bg.jpg", { speed: 500 });
+        });
+    </script>
 </body>
 </html>
