@@ -10,16 +10,16 @@
     <meta name="author" content="Mina Yousseif" />
     <title>C# Simple Captcha</title>
     <meta name="keywords" content="csharp captcha,c# captcha, simple captcha" />
-    <meta name="description" content="" />
+    <meta name="description" content="simple C# captcha using web service and ajax" />
 
     <!--Bootstrap/ Font Awesome Core CSS Styles-->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    '
+    
     <!-- Custom styles for csharp simple captcha -->
     <link href="css/main.css" rel="stylesheet" />
-    <!--- Fav Icon---->
-    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--- Fav Icon --->
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Google fonts -->
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
