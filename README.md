@@ -8,3 +8,4 @@ This is just a fun project I have done on a weekend over a glass of wine. All I 
 Because I am using canvas tag, this won't on IE7 and IE8. 
 who still using IE any way? :)
 
+demo http://minay.me/cscaptcha/
