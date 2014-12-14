@@ -6,10 +6,11 @@ $(function () {
 
     livewebsite = window.location.hostname;
     isLive = (livewebsite.indexOf('minay.me') != -1) ? true : false;
-    webserviceurl = (isLive) ? "../cscaptcha/CaptchaWS.asmx/GenCaptcha" : "../CaptchaWS.asmx/GenCaptcha";
+    genCaptchaurl = (isLive) ? "../cscaptcha/CaptchaWS.asmx/GenCaptcha" : "../CaptchaWS.asmx/GenCaptcha";
+    VerfiyCaptchaurl = (isLive) ? "../cscaptcha/CaptchaWS.asmx/VerfiyCaptcha" : "../CaptchaWS.asmx/VerfiyCaptcha";
 
     // Generate Captcha
-    GetCaptcha(webserviceurl);
+    GetCaptcha(genCaptchaurl);
 
     $('#RefreshBtn').click(function () {
         GetCaptcha(webserviceurl);
@@ -22,7 +23,7 @@ $(function () {
             setTimeout(function () { $('.captcha-failed').slideUp('slow'); }, 5000);
         }
         else {
-            VerfiyCaptcha(enteredCaptcha, webserviceurl);
+            VerfiyCaptcha(enteredCaptcha, VerfiyCaptchaurl);
         }
         $('.captcha-input').val('');
         GetCaptcha();
@@ -43,9 +44,9 @@ function GetCaptcha(webserviceurl) {
     });
 }
 
-function VerfiyCaptcha(captcha, webserviceurl) {
+function VerfiyCaptcha(captcha, VerfiyCaptchaurl) {
     $.ajax({
-        url: webserviceurl,
+        url: VerfiyCaptchaurl,
         type: "POST",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
