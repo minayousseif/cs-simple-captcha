@@ -13,7 +13,7 @@ $(function () {
     GetCaptcha(genCaptchaurl);
 
     $('#RefreshBtn').click(function () {
-        GetCaptcha(webserviceurl);
+        GetCaptcha(genCaptchaurl);
     });
     $('.captcha-submit-btn').click(function () {
         var enteredCaptcha = $('.captcha-input').val();
@@ -26,7 +26,7 @@ $(function () {
             VerfiyCaptcha(enteredCaptcha, VerfiyCaptchaurl);
         }
         $('.captcha-input').val('');
-        GetCaptcha();
+        GetCaptcha(genCaptchaurl);
 
     });
 });
@@ -68,7 +68,7 @@ function VerfiyCaptcha(captcha, VerfiyCaptchaurl) {
     });
 }
 
-// Genrate Captcha Text 
+// Genrate Captcha Text
 function GenCaptcha(captcha) {
     var CImage = document.getElementById("myCaptcha");
     var CText = CImage.getContext("2d");
